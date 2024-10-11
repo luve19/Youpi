@@ -1,0 +1,172 @@
+#youpi2
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Buku - Perpustakaan Digital</title>
+    <style>
+        /* Gaya dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        /* Konten Kategori */
+        .categories {
+            padding: 3rem 0;
+        }
+        .categories h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-info {
+            padding: 1.5rem;
+        }
+        .category-info h2 {
+            margin-bottom: 0.5rem;
+        }
+        .category-info p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .category-btn {
+            display: inline-block;
+            background: #6e8efb;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .category-btn:hover {
+            background: #5c7cfa;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">📚 Perpustakaan Digital</div>
+            <ul class="nav-links">
+                <li><a href="PERPUSTAKAAN.html">Beranda</a></li>
+                <li><a href="KATEGORI.html">Kategori</a></li>
+                <li><a href="KOLEKSI.html">Koleksi Baru</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="categories container">
+        <h1>Kategori Buku</h1>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="fiksi.png" alt="Fiksi">
+                <div class="category-info">
+                    <h2>Fiksi</h2>
+                    <p>Jelajahi dunia imajinasi melalui novel, cerita pendek, dan karya fiksi lainnya.</p>
+                    <a href="category-fiction.html" class="category-btn">Lihat Buku</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="fiksi1.png" alt="Non-Fiksi">
+                <div class="category-info">
+                    <h2>Non-Fiksi</h2>
+                    <p>Perluas pengetahuan Anda dengan buku-buku faktual, biografi, dan karya ilmiah.</p>
+                    <a href="category-non-fiction.html" class="category-btn">Lihat Buku</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="fiksi2.png" alt="Pendidikan">
+                <div class="category-info">
+                    <h2>Pendidikan</h2>
+                    <p>Tingkatkan keterampilan dan pengetahuan Anda dengan buku-buku pelajaran dan referensi.</p>
+                    <a href="category-education.html" class="category-btn">Lihat Buku</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="fiksi3.png" alt="Anak-anak">
+                <div class="category-info">
+                    <h2>Anak-anak</h2>
+                    <p>Temukan buku-buku menyenangkan dan edukatif untuk anak-anak segala usia.</p>
+                    <a href="category-children.html" class="category-btn">Lihat Buku</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Digital. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
